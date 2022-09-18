@@ -8,6 +8,4 @@ const getServicesPage = (req,res) => {
     res.render("services")
 }
 
-
-
 export {getIndexPage, getAboutPage,getServicesPage}
