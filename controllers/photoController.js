@@ -1,11 +1,12 @@
-import Photo from '../models/photoModel.js';
 
-const createPhoto = (req, res) => {
-  const photo = Photo.create(req.body);
-  res.status(201).json({
-    succeded: true,
-    photo,
-  });
-};
+import Photo from "../models/PhotoModel.js";
 
-export { createPhoto };
+const createPhoto = (req,res) => {
+    const photo = Photo.create(req.body)
+    res.status(201).json({
+        succes: true,
+        photo,
+    });
+}
+
+export {createPhoto};
